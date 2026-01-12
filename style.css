@@ -596,6 +596,9 @@ p{
         gap:1.0rem;
     }
 }
+@media only screen and (max-width:300px) {
+    #container6{
+        gap:0.8rem
 #whatsappnow{
     background-color:white;
     color:orangered;
@@ -771,6 +774,7 @@ hr{
 .telbtn{
     text-decoration:none;
 }
+
 
 
 
