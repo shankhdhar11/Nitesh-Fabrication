@@ -1,75 +1,76 @@
-const form = document.getElementById("contactForm");
-const btn = form.querySelector("button");
+// ================= CONTACT FORM + WHATSAPP =================
 
-btn.addEventListener("click", function () {
-  const name = document.getElementById("name");
-  const phone = document.getElementById("phone");
-  const message = document.getElementById("message");
+document.addEventListener("DOMContentLoaded", () => {
 
-  const nameErr = name.nextElementSibling;
-  const phoneErr = phone.nextElementSibling;
-  const msgErr = message.nextElementSibling;
+  const form = document.getElementById("contactForm");
+  const sendBtn = document.getElementById("sendBtn");
 
-  let valid = true;
+  sendBtn.addEventListener("click", () => {
 
-  // NAME
-  if (name.value.trim() === "") {
-    nameErr.textContent = "Name is required";
-    valid = false;
-  } else {
-    nameErr.textContent = "";
-  }
+    const name = document.getElementById("name");
+    const phone = document.getElementById("phone");
+    const message = document.getElementById("message");
 
-  // PHONE
-  if (phone.value.trim() === "") {
-    phoneErr.textContent = "Phone number is required";
-    valid = false;
-  } else if (!/^[0-9]{10}$/.test(phone.value.trim())) {
-    phoneErr.textContent = "Enter valid 10 digit number";
-    valid = false;
-  } else {
-    phoneErr.textContent = "";
-  }
+    const nameErr = name.nextElementSibling;
+    const phoneErr = phone.nextElementSibling;
+    const msgErr = message.nextElementSibling;
 
-  // MESSAGE
-  if (message.value.trim() === "") {
-    msgErr.textContent = "Message is required";
-    valid = false;
-  } else {
-    msgErr.textContent = "";
-  }
+    let valid = true;
 
-  if (valid) {
-    alert("Message sent successfully ✅");
-    form.reset();
-  }
-});
-
-const sendBtn = document.getElementById("sendBtn");
-
-sendBtn.addEventListener("click", () => {
-
-    const name = document.getElementById("name").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    if(name === "" || phone === "" || message === ""){
-        return;
+    // NAME
+    if (name.value.trim() === "") {
+      nameErr.textContent = "Name is required";
+      valid = false;
+    } else {
+      nameErr.textContent = "";
     }
 
-    const whatsappNumber = "919662477669"; // 👉 yahan OWNER ka WhatsApp number daal (91 ke saath)
+    // PHONE
+    if (phone.value.trim() === "") {
+      phoneErr.textContent = "Phone number is required";
+      valid = false;
+    } else if (!/^[0-9]{10}$/.test(phone.value.trim())) {
+      phoneErr.textContent = "Enter valid 10 digit number";
+      valid = false;
+    } else {
+      phoneErr.textContent = "";
+    }
 
-    const text = 
-`New Contact Form Message 🚀
+    // MESSAGE
+    if (message.value.trim() === "") {
+      msgErr.textContent = "Message is required";
+      valid = false;
+    } else {
+      msgErr.textContent = "";
+    }
 
-Name: ${name}
-Phone: ${phone}
-Message: ${message}`;
+    if (!valid) return;
 
-    const encodedText = encodeURIComponent(text);
+    // ✅ WhatsApp redirect
+    const whatsappNumber = "919662477669";
 
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+    const text = `New Contact Form Message 🚀
+
+Name: ${name.value}
+Phone: ${phone.value}
+Message: ${message.value}`;
+
+    const whatsappURL =
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
     window.open(whatsappURL, "_blank");
-});
 
+    form.reset();
+  });
+
+
+  // ================= WHATSAPP BUTTON (LEFT SIDE) =================
+  const whatsappBtn = document.getElementById("wb");
+
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener("click", () => {
+      window.open("https://wa.me/919662477669", "_blank");
+    });
+  }
+
+});
