@@ -1,7 +1,6 @@
 #header{
     height:8rem;
     width:100%;
-    background-color: #0F172A;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -226,9 +225,6 @@ span{
     100%{ opacity:1; }
 }
 #aboutsection2{
-    background:
-    radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(135deg, #0b1c2d, #0a2540);
     width:100%;
     min-height:40rem;
     height:auto;
@@ -484,4 +480,5 @@ h2{
     background-repeat:no repeat;
     
 }
+
 
