@@ -167,9 +167,7 @@ p{
     }
 }
 #aboutsection1{
-    background:
-    radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(135deg, #0b1c2d, #0a2540);
+    
     width:100%;
     
 }
@@ -480,5 +478,6 @@ h2{
     background-repeat:no repeat;
     
 }
+
 
 
