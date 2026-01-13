@@ -1,16 +1,11 @@
-// ===== POPUP AFTER 5 SECONDS =====
+// ===== POPUP AFTER 5 SECONDS (EVERY TIME) =====
 window.addEventListener("load", () => {
-
-    // Agar chahe ki ek hi baar aaye (optional)
-    if (!sessionStorage.getItem("popupShown")) {
-        setTimeout(() => {
-            const popup = document.getElementById("popupOverlay");
-            if (popup) {
-                popup.style.display = "flex";
-                sessionStorage.setItem("popupShown", "true");
-            }
-        }, 5000); // 5 seconds
-    }
+    setTimeout(() => {
+        const popup = document.getElementById("popupOverlay");
+        if (popup) {
+            popup.style.display = "flex";
+        }
+    }, 5000); // 5 seconds
 });
 
 // Close popup
@@ -67,7 +62,7 @@ if (sendBtn) {
 
         window.open(whatsappURL, "_blank");
 
-        // Close popup after submit (optional)
+        // Close popup after submit
         const popup = document.getElementById("popupOverlay");
         if (popup) popup.style.display = "none";
 
