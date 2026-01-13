@@ -1,7 +1,6 @@
 #header{
     height:8rem;
     width:100%;
-    background-color: #0F172A;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -160,9 +159,7 @@ p{
     }
 }
 #projectssection1{
-    background:
-    radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(135deg, #0b1c2d, #0a2540);
+    
     width:100%;
     
 }
@@ -217,9 +214,7 @@ span{
     100%{ opacity:1; }
 }
 #projectssection2{
-    background:
-    radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(135deg, #0b1c2d, #0a2540);
+    background-color:white;
     width:100%;
     min-height:60rem;
     height:auto;
@@ -255,10 +250,10 @@ span{
     width:26rem;
     background-color:grey;
     border-radius:10px;
-    background-color: #0F172A;
+    background-color: #EDEADE;
     padding:15px;
     transition:transform 0.4s ease;
-    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 .card:hover{
     transform:scale(1.05);
@@ -320,7 +315,7 @@ span{
     transform:scale(1.05);
 }
 h2{
-    color:white;
+    color:black;
 }
 #section7{
     background-color: #0F172A;
@@ -442,5 +437,12 @@ h2{
 }
 .telbtn{
     text-decoration:none;
+}
+#newsection{
+    background-image:url("welding.png");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no repeat;
+    
 }
 
