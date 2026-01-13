@@ -1,7 +1,6 @@
 #header{
     min-height:8rem;
     width:100%;
-    background-color: #0F172A;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -179,9 +178,7 @@ p{
     }
 }
 #contactsection1{
-    background:
-    radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(135deg, #0b1c2d, #0a2540);
+    
     width:100%;
     
 }
@@ -246,7 +243,7 @@ pre{
 }
 
 body{
-    background:#050b18;
+    background:white;
     color:#fff;
 }
 
@@ -270,7 +267,7 @@ body{
 }
 
 .desc{
-    color:#b6c2e1;
+    color:black;
     margin-bottom:30px;
 }
 
@@ -291,7 +288,7 @@ body{
 
 .info-box p, .info-box span{
     font-size:14px;
-    color:#b6c2e1;
+    color:black;
 }
 
 .call-btn, .whatsapp-btn{
@@ -387,7 +384,7 @@ body{
 }
 
 body{
-    background:linear-gradient(135deg,#020617,#020617);
+    background-color:white;
 }
 
 .visit-section{
@@ -526,4 +523,18 @@ body{
 .telbtn{
     text-decoration:none;
 }
+#newsection{
+    background-image:url("welding.png");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no repeat;
+    
+}
+#h11{
+    color:black;
+}
+.h44{
+    color:black;
+}
+
 
