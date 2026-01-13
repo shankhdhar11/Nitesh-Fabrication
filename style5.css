@@ -4,7 +4,6 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    position:fixed;
 }
 #logo{
     width:9rem;
@@ -536,5 +535,6 @@ body{
 .h44{
     color:black;
 }
+
 
 
