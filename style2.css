@@ -477,3 +477,11 @@ h2{
 .telbtn{
     text-decoration:none;
 }
+#newsection{
+    background-image:url("welding.png");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no repeat;
+    
+}
+
